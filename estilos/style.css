@@ -1,0 +1,479 @@
+@charset "UTF-8";
+
+:root {
+    --blue1: #42B3E5;
+    --blue2: #0384CE;
+    --blue3: #3156A3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+    margin: 0;
+}
+
+.mil-px-header {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    cursor: pointer;
+}
+
+nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: var(--blue1);
+    color: white;
+    transition: .4s;
+    border-radius: 3px;
+}
+
+main {
+    background-color: white;
+}
+
+.mil-px-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    max-width: 1000px;
+}
+
+#inicio-com-bg {
+    background-image: url('../imagens/mulher-feliz-ofc.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.205);
+    padding-bottom: 0;
+    height: calc(100vh - 120px);
+}
+
+#inicio-com-bg h1{
+    margin-top: 100px;
+    align-self: flex-start;
+    display: block;
+    font-size: 5vw;
+    font-weight: normal;
+    text-shadow: none;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+
+#inicio-com-bg > .mil-px-bg > #titulo-texto > p {
+    align-self: flex-start;
+    font-size: 1.7vw;
+    margin-bottom: 40px;
+}
+
+#blocos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#inicio-com-bg aside {
+    height: 225px;
+    width: 333px;
+    padding: 20px 30px;
+}
+
+#inicio-com-bg aside * {
+    margin-bottom: 20px;
+} 
+
+#inicio-com-bg aside p {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+} 
+
+#inicio-com-bg aside button {
+    border: 2px solid white;
+    padding: 5px;
+    background-color: inherit;
+    color: white;
+}
+
+#inicio-com-bg aside button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+
+#inicio-com-bg aside .opening-hours {
+    display: flex;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.164);
+}
+
+#inicio-com-bg aside .opening-hours > p{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.bloco1 {
+    background-color: var(--blue1);
+    height: 225px;
+    width: 333px;
+    padding: 20px 30px;
+}
+
+.bloco2 {
+    background-color: var(--blue2);
+    height: 225px;
+    width: 333px;
+    padding: 20px 30px;
+}
+
+.bloco3 {
+    background-color: var(--blue3);
+    height: 225px;
+    width: 333px;
+    padding: 20px 30px;
+}
+
+#inicio-com-bg aside.bloco3 h3 {
+    background-color: var(--blue3);
+    margin-bottom: 20px;
+}
+
+
+/* main */
+
+
+.mil-px-final {
+    max-width: 1000px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.mil-px-final h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.border-bottom {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #42B3E5;
+}
+
+section#lastest-news {
+    width: 66%;
+    display: inline-block;
+}
+
+div.news {
+    width: 300px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+div.data {
+    display: block;
+    margin-bottom: 30px;
+}
+
+span.dec-12 {
+    background-color: var(--blue3);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 0.7em;
+}
+
+span.two {
+    padding: 10px;
+    background-color: #42B3E5;
+    color: white;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+img.pediatra {
+    margin-top: 30px;
+    width: 270px;
+    margin: auto;
+}
+
+div.news h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.news p {
+    width: 270px;
+    font-size: 0.95em;
+}
+
+
+
+/* departaments */
+
+
+section#departaments {
+    width: 33%;
+    display: inline-block;
+}
+
+div.blocos-azuis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.bloco-azul {
+    width: calc(50% - 15px);
+    height: 150px;
+    background-color: var(--blue1);
+    display: inline-block;
+}
+
+section#departaments h4 {
+    margin: 30px 0;
+}
+
+section#departaments > p {
+    font-size: 0.9em;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+div.contato {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 15px 0;
+}
+
+div#contatos .simbolo {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    display: flex;
+    border-radius: 4px;
+}
+
+div#contatos .simbolo:hover {
+    background-color: #42B3E5;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+
+span.material-symbols-outlined {
+    margin: auto;
+}
+
+div.contato p {
+    font-size: 0.9em;
+    margin-left: 10px;
+    align-self: center;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #202020;
+    color: white;
+    margin-top: 50px;
+}
+
+footer #blocos {
+    color: white;
+}
+
+footer #blocos h2 {
+    font-weight: normal;
+}
+
+footer #blocos p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+footer div.bloco1 {
+    height: 100px;
+}
+
+footer div.bloco2 {
+    height: 100px;
+}
+
+footer div.bloco3 {
+    height: 100px;
+}
+
+
+
+
+footer .mil-px-footer {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+footer .mil-px-footer p, footer .mil-px-footer li {
+    font-size: 0.8em;
+}
+
+footer .mil-px-footer li div.lista {
+    margin-bottom: 10px;
+    margin-top: -18px;
+    margin-left: 20px;
+}
+
+footer .mil-px-footer li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+footer .mil-px-footer li::before {
+    content: '↠ ';
+}
+
+footer .mil-px-footer h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: 30px 0;
+}
+
+footer div#medicenter-clinic {
+    width: 333px;
+    padding-right: 15px;
+}
+
+footer div#medicenter-clinic p {
+    color: rgb(148, 148, 148);
+}
+
+footer div#medicenter-clinic address {
+    margin-top: 25px;
+}
+
+footer div#medicenter-clinic div.endereco {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    text-align: left;
+}
+
+footer div#medicenter-clinic div.endereco .footer-number {
+    margin-right: 43px;
+}
+
+footer div#medicenter-clinic div.endereco a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer div#medicenter-clinic div.endereco a:hover {
+    text-decoration: underline;
+    color: lightgray;
+    transition: .3s;
+}
+
+footer div#medicenter-clinic .rede-social {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(73, 73, 73);
+    color: rgb(145, 144, 144);
+    display: inline-block;
+    border-radius: 5px;
+
+    padding: 3px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+
+
+footer div#lastest-posts {
+    width: 333px;
+    padding-right: 15px;
+}
+
+footer div#lastest-posts .footer-data {
+    font-size: 0.8em;
+    color: #42B3E5;
+}
+
+
+footer div#lastest-tweets {
+    width: 333px;
+}
+
+footer div#creditos {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.336);
+    font-size: 0.9em;
+}
+
+footer div#creditos p {
+    margin: 0;
+}
+
+footer div#creditos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer div#creditos a:hover {
+    color: #42B3E5;
+    transition: .3s;
+}
