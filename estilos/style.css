@@ -88,27 +88,33 @@ main {
     height: calc(100vh - 120px);
 }
 
+#inicio-com-bg > .mil-px-bg > #titulo-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 225px);
+}
+
 #inicio-com-bg h1{
-    margin-top: 100px;
-    align-self: flex-start;
     display: block;
-    font-size: 5vw;
+    font-size: 5em;
     font-weight: normal;
-    text-shadow: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678);
     line-height: 1em;
     margin-bottom: 30px;
 }
 
 #inicio-com-bg > .mil-px-bg > #titulo-texto > p {
     align-self: flex-start;
-    font-size: 1.7vw;
-    margin-bottom: 40px;
+    font-size: 1.5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.678);
 }
 
 #blocos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 225px;
 }
 
 #inicio-com-bg aside {
