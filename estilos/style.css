@@ -316,6 +316,7 @@ div#contatos .simbolo:hover {
 
 span.material-symbols-outlined {
     margin: auto;
+    cursor: pointer;
 }
 
 div.contato p {
