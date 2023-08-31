@@ -43,6 +43,10 @@ header {
     cursor: pointer;
 }
 
+#menu2 {
+    display: none;
+}
+
 nav a {
     color: black;
     text-transform: uppercase;

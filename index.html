@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="imagens/favicon.webp" type="image/x-icon">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <div class="mil-px-header">
             <img src="imagens/medcenter.png" alt="logo-medcenter" id="logo">
             <nav id="menu">
-
-                <span id="burguer" class="material-symbols-outlined" onclick="aparecer()">menu</span>
 
                 <a href="#">Home</a>
                 <a href="#">Blog</a>
@@ -25,6 +23,18 @@
                 <a href="#">TimeTable</a>
                 <a href="#">Gallery</a>
                 <a href="#">Contact</a>
+            </nav>
+
+            <nav id="menu2">
+                <select name="header-escolha" id="iheader-escolha">
+                    <option value="home">Home</option>
+                    <option value="blog">Blog</option>
+                    <option value="pages">Pages</option>
+                    <option value="departaments">Departaments</option>
+                    <option value="timetable">TimeTable</option>
+                    <option value="gallery">Gallery</option>
+                    <option value="contact">Contact</option>
+                </select>
             </nav>
         </div>
     </header>
@@ -229,26 +239,6 @@
             <a href="#logo" style="font-weight: normal;">Voltar ao topo ↑</a>
         </div>
     </footer>
-    
-    <script>
-
-    function aparecer() {
-    if (menu.style.display == "block") {               
-    menu.style.display = "none" 
-    } else {
-    menu.style.display = "block"
-    }
-    }
-
-    function mudouTamanho() {                             
-    if (window.innerWidth >= 850) {
-        menu.style.display = 'block'
-    } else {
-        menu.style.display = 'none'
-    }
-    }
-</script>
-
 </body>
 
 </html>
