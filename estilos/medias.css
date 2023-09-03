@@ -147,7 +147,7 @@
 
     .mil-px-header {
         justify-content: space-between;
-        width: 450px;
+        width: calc(100vw - 150px);
     }
 
     header #menu {
@@ -171,7 +171,7 @@
     }
 
     .mil-px-bg {
-        width: 450px;
+        width: calc(100vw - 150px);
     }
 
     div#titulo-texto {
@@ -196,7 +196,7 @@
     }
 
     #inicio-com-bg aside {
-        width: 450px;
+        width: calc(100vw - 150px);
         height: 200px;
     }
 
@@ -212,7 +212,7 @@
         margin-top: 400px;
         flex-direction: column;
         align-items: center;
-        width: 450px;
+        width: calc(100vw - 150px);
     }
 
     section#lastest-news {
@@ -221,16 +221,16 @@
     }
 
     div.news {
-        width: 450px;
+        width: calc(100vw - 150px);
     }
 
     div.news p {
-        width: 450px;
+        width: calc(100vw - 150px);
         font-size: 1em;
     }
 
     section#lastest-news img.pediatra {
-        width: 450px;
+        width: calc(100vw - 150px);
         height: 260px;
         object-fit: cover;
     }
@@ -255,12 +255,12 @@
 
     footer div#blocos {
         flex-direction: column;
-        width: 450px;
+        width: calc(100vw - 150px);
         margin: auto;
     }
 
     footer div.bloco1, footer div.bloco2, footer div.bloco3 {
-        width: 450px;
+        width: calc(100vw - 150px);
         height: 110px;
     }
 
@@ -314,6 +314,7 @@
 
     #inicio-com-bg aside {
         width: 320px;
+        height: 220px;
     }
 
     div#titulo-texto h1 {
