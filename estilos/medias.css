@@ -7,7 +7,7 @@
 
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 816px) and (max-width: 1100px) {
     
 
     header {
@@ -16,14 +16,14 @@
     }
 
     .mil-px-header {
-        width: 720px;
+        width: 750px;
         justify-content: space-between;
         gap: 10px;
     }
 
     header a {
         margin: 0;
-        padding: 6px;
+        padding: 8px;
     }
 
     section#inicio-com-bg {
@@ -40,12 +40,16 @@
         margin-bottom: 15px;
     }
 
+    .mil-px-bg {
+        width: 750px;
+    }
+
     section#inicio-com-bg > .mil-px-bg > div#titulo-texto > p {
         font-size: 1.3em;
     }
 
     #inicio-com-bg aside {
-        width: 240px;
+        width: 250px;
         height: 200px;
         padding: 15px 20px;
     }
@@ -61,9 +65,8 @@
 
     /* main */
 
-
     .mil-px-final {
-        width: 720px;
+        width: 750px;
     }
 
     section#lastest-news {
@@ -90,7 +93,7 @@
 
     div#ultima-news {
         position: absolute;
-        margin-left: 42px;
+        margin-left: 102px;
     }
 
     /* departaments */
@@ -124,7 +127,7 @@
     }
 
     footer .mil-px-footer {
-        width: 720px;
+        width: 750px;
     }
 
     footer div#lastest-tweets {
@@ -133,14 +136,14 @@
     }
 
     footer div#creditos{
-        width: 720px;
+        width: 750px;
     }
 
 }
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 815px) {
 
     .mil-px-header {
         justify-content: space-between;
@@ -156,15 +159,11 @@
     }
 
     header #menu2 select {
+        width: 200px;
         font-size: 17px;
         border-radius: 8px;
         padding: 5px;
         border: 1px solid var(--blue2);
-    }
-
-    header #menu2 select:hover {
-        background-color: var(--blue1);
-        color: white;
     }
 
     section#inicio-com-bg {
@@ -219,6 +218,15 @@
     section#lastest-news {
         width: 100%;
         margin-top: 190px;
+    }
+
+    div.news {
+        width: 450px;
+    }
+
+    div.news p {
+        width: 450px;
+        font-size: 1em;
     }
 
     section#lastest-news img.pediatra {
@@ -282,8 +290,72 @@
     }
 }
 
-@media screen and (max-width: 599px) {
-    body {
-        background-color: red;
+@media screen and (max-width: 510px) {
+
+    header {
+        height: 150px;
+    }
+
+    div.mil-px-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    div.mil-px-header select#iheader-escolha {
+        width: 320px;
+    }
+
+    div.mil-px-bg, div.mil-px-final, div.mil-px-footer, div.mil-px-header, div#creditos {
+        max-width: 320px;
+    }
+
+
+
+    #inicio-com-bg aside {
+        width: 320px;
+    }
+
+    div#titulo-texto h1 {
+        font-size: 2em;
+    }
+
+    section#inicio-com-bg > .mil-px-bg > div#titulo-texto > p {
+        font-size: 1em;
+    }
+
+    div#lastest-news {
+        width: 320px;
+    }
+
+    section#lastest-news img.pediatra {
+        width: 320px;
+    }
+
+    div.news {
+        width: 320px;
+    }
+
+    div.news p {
+        width: 320px;
+        font-size: 0.9em;
+    }
+
+    section#departaments div.bloco-azul {
+        height: 145px;
+    }
+
+
+    footer div#blocos {
+        align-items: center;
+        width: auto;
+    }
+
+    footer div.bloco1, footer div.bloco2, footer div.bloco3 {
+        width: 320px;
+    }
+
+    footer div#lastest-tweets, footer div#medicenter-clinic, footer div#lastest-posts {
+        width: 320px;
     }
 }
