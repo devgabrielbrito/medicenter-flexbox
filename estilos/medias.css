@@ -319,6 +319,10 @@
         font-size: 1em;
     }
 
+    section#lastest-news {
+        margin-top: 250px;
+    }
+
     div.news p {
         font-size: 0.9em;
     }
@@ -343,3 +347,9 @@
         word-wrap: break-word;
     }
 } 
+
+@media screen and (max-width: 350px) {
+    section#lastest-news {
+        margin-top: 350px;
+    }
+}
